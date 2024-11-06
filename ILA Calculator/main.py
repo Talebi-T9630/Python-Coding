@@ -9,12 +9,12 @@ print("You can start the timer by pressing t and stop the timer by clicking s.")
 key= input()
 if key == "t" :
     starttime = time.time()
-    print(f"Timer started at: {time.ctime(starttime)}{starttime}")
+    print(f"Timer started at: {time.ctime(starttime)}")
 
 key = input()
 if key == "s":
     endtime =time.time()
-    print(f"Timer ended at: {time.ctime(endtime)}{endtime}")
+    print(f"Timer ended at: {time.ctime(endtime)}")
     total = (round((endtime-starttime)/360))*IntervalRate
         
 print(total)
